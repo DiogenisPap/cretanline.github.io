@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cretan Line — Μεταφορικές Υπηρεσίες Κρήτης</title>
+<meta name="description" content="Cretan Line: οδικές μεταφορές εμπορευμάτων, καυσίμων και τροφίμων σε όλη την Κρήτη και πανελλαδικά. Στόλος φορτηγών και ψυγείων, έμπειροι οδηγοί.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="routeline" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="#top" class="logo">
+      <span class="logo-mark">
+        <svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true">
+          <path d="M4 30h4V16h14v14h4" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M26 20h8l6 6v4h-14z" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="13" cy="33" r="3.2" stroke="currentColor" stroke-width="2.3" fill="none"/>
+          <circle cx="34" cy="33" r="3.2" stroke="currentColor" stroke-width="2.3" fill="none"/>
+        </svg>
+      </span>
+      <span class="logo-text">Cretan&nbsp;Line</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#ipiresies">Υπηρεσίες</a>
+      <a href="#stolos">Ο στόλος</a>
+      <a href="#diktio">Δίκτυο</a>
+      <a href="#pelates">Πελάτες</a>
+      <a href="#etairia">Η εταιρία</a>
+      <a href="#epikoinonia" class="nav-cta">Επικοινωνία</a>
+    </nav>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Άνοιγμα μενού" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="hero-kicker">Οδικές μεταφορές · Κρήτη &amp; πανελλαδικά</p>
+        <h1>Ό,τι φορτώνει η Κρήτη,<br>το πάμε εμείς.</h1>
+        <p class="hero-lede">Η Cretan Line μεταφέρει εμπορεύματα, καύσιμα και τρόφιμα για βιομηχανίες, πρατήρια και παραγωγούς — από τα χωριά της Κρήτης ως την Αθήνα, την Πάτρα, τα Ιωάννινα και τη Θεσσαλονίκη. Στόλος φορτηγών, βυτιοφόρων και ψυγείων, και οδηγοί που ξέρουν κάθε χιλιόμετρο της διαδρομής.</p>
+        <div class="hero-actions">
+          <a href="#epikoinonia" class="btn btn-primary">Ζητήστε προσφορά</a>
+          <a href="#ipiresies" class="btn btn-ghost">Δείτε τις υπηρεσίες</a>
+        </div>
+      </div>
+
+      <div class="hero-map" role="img" aria-label="Χάρτης δρομολογίων της Cretan Line στην Κρήτη, από το Ηράκλειο ως την Ιεράπετρα">
+        <svg viewBox="0 0 520 300" width="100%" height="100%">
+          <path d="M20 180 C 70 140, 120 210, 180 160 S 300 110, 360 150 S 460 200, 500 150"
+                fill="none" stroke="#C98A3D" stroke-width="3" stroke-dasharray="2 14" stroke-linecap="round"/>
+          <g class="map-stop" transform="translate(70,150)">
+            <circle r="6" fill="#F2EEE3" stroke="#C98A3D" stroke-width="2.5"/>
+            <text x="12" y="5">Χανιά</text>
+          </g>
+          <g class="map-stop" transform="translate(190,158)">
+            <circle r="7.5" fill="#C98A3D"/>
+            <text x="13" y="5" class="map-hub">Ηράκλειο</text>
+          </g>
+          <g class="map-stop" transform="translate(300,124)">
+            <circle r="6" fill="#F2EEE3" stroke="#C98A3D" stroke-width="2.5"/>
+            <text x="12" y="5">Ρέθυμνο</text>
+          </g>
+          <g class="map-stop" transform="translate(410,172)">
+            <circle r="6" fill="#F2EEE3" stroke="#C98A3D" stroke-width="2.5"/>
+            <text x="12" y="5">Άγιος Νικόλαος</text>
+          </g>
+          <g class="map-stop" transform="translate(488,145)">
+            <circle r="6" fill="#F2EEE3" stroke="#C98A3D" stroke-width="2.5"/>
+            <text x="-70" y="5">Ιεράπετρα</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="wrap stats-grid">
+      <div class="stat"><span class="stat-num">120+</span><span class="stat-label">φορτηγά &amp; βυτιοφόρα</span></div>
+      <div class="stat"><span class="stat-num">45</span><span class="stat-label">ψυγεία για ευπαθή φορτία</span></div>
+      <div class="stat"><span class="stat-num">200+</span><span class="stat-label">οδηγοί σε όλη την Κρήτη</span></div>
+      <div class="stat"><span class="stat-num">24/7</span><span class="stat-label">διαθεσιμότητα δρομολογίων</span></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="ipiresies" class="services">
+    <div class="wrap">
+      <h2 class="section-title">Τι μεταφέρουμε</h2>
+      <p class="section-sub">Τέσσερις γραμμές μεταφοράς, ένας στόλος. Κάθε φορτίο έχει τον δικό του τρόπο να ταξιδέψει σωστά.</p>
+
+      <ul class="service-list">
+        <li class="service-row">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><rect x="6" y="12" width="28" height="18" rx="1.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M6 18h28M14 12v18M24 12v18" stroke="currentColor" stroke-width="2.2"/></svg>
+          </div>
+          <div class="service-text">
+            <h3>Γενικά εμπορεύματα</h3>
+            <p>Παλετοποιημένα και χύδην φορτία για βιομηχανία, λιανεμπόριο και κατασκευές — από λιμάνι σε αποθήκη και από αποθήκη σε κατάστημα.</p>
+          </div>
+        </li>
+
+        <li class="service-row">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><rect x="4" y="16" width="20" height="14" rx="1.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M24 20h7l5 5v5h-12" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="12" cy="33" r="2.6" stroke="currentColor" stroke-width="2"/><circle cx="29" cy="33" r="2.6" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <div class="service-text">
+            <h3>Καύσιμα &amp; πετρελαιοειδή</h3>
+            <p>Μεταφορά καυσίμων με πιστοποιημένα βυτιοφόρα προς πρατήρια και βιομηχανικές μονάδες, με αυστηρή τήρηση των κανόνων ασφαλείας ADR.</p>
+          </div>
+        </li>
+
+        <li class="service-row">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><path d="M8 28c0-8 4-16 12-16s12 8 12 16" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M8 28h24" stroke="currentColor" stroke-width="2.2"/><circle cx="14" cy="14" r="2" fill="currentColor"/><circle cx="22" cy="10" r="2" fill="currentColor"/><circle cx="28" cy="15" r="2" fill="currentColor"/></svg>
+          </div>
+          <div class="service-text">
+            <h3>Τρόφιμα &amp; λαχανικά</h3>
+            <p>Καθημερινά δρομολόγια από τα θερμοκήπια της Ιεράπετρας και τις μονάδες παραγωγής προς αγορές, χονδρεμπόριο και σούπερ μάρκετ σε όλη την Ελλάδα.</p>
+          </div>
+        </li>
+
+        <li class="service-row">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><rect x="5" y="13" width="24" height="16" rx="1.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M29 17h5l4 4v8h-9" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M11 19l3 3-3 3M17 19l3 3-3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="14" cy="32" r="2.4" stroke="currentColor" stroke-width="2"/><circle cx="33" cy="32" r="2.4" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <div class="service-text">
+            <h3>Ψυκτικές μεταφορές</h3>
+            <p>Στόλος ψυγείων με συνεχή καταγραφή θερμοκρασίας, για γαλακτοκομικά, κατεψυγμένα και νωπά προϊόντα που δεν αντέχουν συμβιβασμούς.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FLEET -->
+  <section id="stolos" class="fleet">
+    <div class="wrap">
+      <div class="fleet-grid">
+        <div class="fleet-copy">
+          <h2 class="section-title light">Ο στόλος</h2>
+          <p class="section-sub light">Νεότευκτα φορτηγά, βυτιοφόρα και ψυγεία, σε τακτική συντήρηση, για να φτάνει κάθε φορτίο ακριβώς όπως ξεκίνησε.</p>
+          <dl class="fleet-specs">
+            <div><dt>Φορτηγά γενικής χρήσης</dt><dd>60</dd></div>
+            <div><dt>Βυτιοφόρα καυσίμων (ADR)</dt><dd>18</dd></div>
+            <div><dt>Ψυγεία (reefer)</dt><dd>45</dd></div>
+            <div><dt>Μέσος όρος ηλικίας στόλου</dt><dd>4,2 έτη</dd></div>
+          </dl>
+        </div>
+        <div class="fleet-visual" aria-hidden="true">
+          <svg viewBox="0 0 320 220" width="100%" height="100%">
+            <rect x="20" y="70" width="140" height="80" rx="3" fill="none" stroke="#C98A3D" stroke-width="2.5"/>
+            <path d="M160 90h55l45 40v20h-100z" fill="none" stroke="#C98A3D" stroke-width="2.5"/>
+            <circle cx="60" cy="158" r="14" fill="none" stroke="#F2EEE3" stroke-width="3"/>
+            <circle cx="120" cy="158" r="14" fill="none" stroke="#F2EEE3" stroke-width="3"/>
+            <circle cx="210" cy="158" r="14" fill="none" stroke="#F2EEE3" stroke-width="3"/>
+            <circle cx="250" cy="158" r="14" fill="none" stroke="#F2EEE3" stroke-width="3"/>
+            <line x1="40" y1="200" x2="300" y2="200" stroke="#C98A3D" stroke-width="2" stroke-dasharray="3 10"/>
+          </svg>
+        </div>
+      </div>
+
+      <ul class="truck-gallery">
+        <li class="truck-card">
+          <svg class="truck-art" viewBox="0 0 220 120" aria-hidden="true">
+            <rect x="10" y="48" width="92" height="42" rx="2" fill="#16263E"/>
+            <path d="M102 60h38l26 24v6h-64z" fill="#C98A3D"/>
+            <rect x="106" y="64" width="20" height="14" rx="1.5" fill="#F2EEE3" opacity=".85"/>
+            <circle cx="40" cy="96" r="13" fill="#0E1B2E" stroke="#F2EEE3" stroke-width="2.5"/>
+            <circle cx="78" cy="96" r="13" fill="#0E1B2E" stroke="#F2EEE3" stroke-width="2.5"/>
+            <circle cx="150" cy="96" r="13" fill="#0E1B2E" stroke="#F2EEE3" stroke-width="2.5"/>
+            <circle cx="182" cy="96" r="13" fill="#0E1B2E" stroke="#F2EEE3" stroke-width="2.5"/>
+            <line x1="4" y1="110" x2="216" y2="110" stroke="#C98A3D" stroke-width="2" stroke-dasharray="2 9"/>
+          </svg>
+          <h3>Volvo FH16</h3>
+          <p>Ρυμουλκό για τα μεγαλύτερα και βαρύτερα φορτία — κύρια επιλογή για τα δρομολόγια προς Αθήνα και Θεσσαλονίκη.</p>
+        </li>
+
+        <li class="truck-card">
+          <svg class="truck-art" viewBox="0 0 220 120" aria-hidden="true">
+            <rect x="10" y="48" width="92" height="42" rx="2" fill="#16263E"/>
+            <path d="M102 56h34l30 28v6h-64z" fill="#5F6B3F"/>
+            <rect x="106" y="62" width="18" height="14" rx="1.5" fill="#F2EEE3" opacity=".85"/>
+            <circle cx="40" cy="96" r="13" fill="#0E1B2E" stroke="#F2EEE3" stroke-width="2.5"/>
+            <circle cx="78" cy="96" r="13" fill="#0E1B2E" stroke="#F2EEE3" stroke-width="2.5"/>
+            <circle cx="150" cy="96" r="13" fill="#0E1B2E" stroke="#F2EEE3" stroke-width="2.5"/>
+            <circle cx="182" cy="96" r="13" fill="#0E1B2E" stroke="#F2EEE3" stroke-width="2.5"/>
+            <line x1="4" y1="110" x2="216" y2="110" stroke="#C98A3D" stroke-width="2" stroke-dasharray="2 9"/>
+          </svg>
+          <h3>DAF XF</h3>
+          <p>Αξιόπιστο και οικονομικό στην κατανάλωση — ο κορμός του στόλου για τα καθημερινά δρομολόγια μέσα στην Κρήτη.</p>
+        </li>
+
+        <li class="truck-card">
+          <svg class="truck-art" viewBox="0 0 220 120" aria-hidden="true">
+            <rect x="10" y="48" width="92" height="42" rx="2" fill="#16263E"/>
+            <path d="M102 58h36l28 26v6h-64z" fill="#8C96A3"/>
+            <rect x="106" y="63" width="19" height="14" rx="1.5" fill="#F2EEE3" opacity=".85"/>
+            <circle cx="40" cy="96" r="13" fill="#0E1B2E" stroke="#F2EEE3" stroke-width="2.5"/>
+            <circle cx="78" cy="96" r="13" fill="#0E1B2E" stroke="#F2EEE3" stroke-width="2.5"/>
+            <circle cx="150" cy="96" r="13" fill="#0E1B2E" stroke="#F2EEE3" stroke-width="2.5"/>
+            <circle cx="182" cy="96" r="13" fill="#0E1B2E" stroke="#F2EEE3" stroke-width="2.5"/>
+            <line x1="4" y1="110" x2="216" y2="110" stroke="#C98A3D" stroke-width="2" stroke-dasharray="2 9"/>
+          </svg>
+          <h3>Mercedes-Benz Actros</h3>
+          <p>Οι μονάδες ψύξης της Cretan Line είναι σχεδόν πάντα πάνω σε Actros — σταθερό όχημα για ευαίσθητο φορτίο.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- NETWORK -->
+  <section id="diktio" class="network">
+    <div class="wrap">
+      <h2 class="section-title">Πανελλαδικό δίκτυο</h2>
+      <p class="section-sub">Από την Κρήτη, με το φέριμποτ ως τον Πειραιά, και από εκεί οδικώς σε όλη την ηπειρωτική Ελλάδα.</p>
+
+      <div class="network-map" role="img" aria-label="Δίκτυο δρομολογίων από την Κρήτη προς Πειραιά, Αθήνα, Πάτρα, Ιωάννινα και Θεσσαλονίκη">
+        <svg viewBox="0 0 640 220" width="100%" height="100%">
+          <path d="M30 170c40 10 70 -10 90 -30" fill="none" stroke="#C98A3D" stroke-width="2.5" stroke-dasharray="1 4" stroke-linecap="round"/>
+          <path d="M120 140c50 -40 110 -10 140 10s90 -10 130 -40 160 -30 210 10"
+                fill="none" stroke="#C98A3D" stroke-width="2.5" stroke-dasharray="2 13" stroke-linecap="round"/>
+
+          <g class="map-stop" transform="translate(30,170)"><circle r="7" fill="#C98A3D"/><text x="-8" y="-14">Κρήτη</text></g>
+          <g class="map-stop" transform="translate(120,140)"><circle r="4.5" fill="none" stroke="#C98A3D" stroke-width="2"/><text x="8" y="-8" class="ferry-label">φέριμποτ</text></g>
+          <g class="map-stop" transform="translate(200,130)"><circle r="7.5" fill="#C98A3D"/><text x="12" y="5" class="map-hub">Πειραιάς / Αθήνα</text></g>
+          <g class="map-stop" transform="translate(330,115)"><circle r="6" fill="#F2EEE3" stroke="#C98A3D" stroke-width="2.5"/><text x="-14" y="-14">Πάτρα</text></g>
+          <g class="map-stop" transform="translate(470,90)"><circle r="6" fill="#F2EEE3" stroke="#C98A3D" stroke-width="2.5"/><text x="-18" y="-14">Ιωάννινα</text></g>
+          <g class="map-stop" transform="translate(600,100)"><circle r="7.5" fill="#C98A3D"/><text x="-70" y="-14" class="map-hub">Θεσσαλονίκη</text></g>
+        </svg>
+      </div>
+
+      <ul class="network-list">
+        <li><strong>Αθήνα</strong><span>Καθημερινά δρομολόγια, με παράδοση σε αποθήκες και κέντρα διανομής του λεκανοπεδίου.</span></li>
+        <li><strong>Πάτρα</strong><span>Στάση στη γραμμή προς τη δυτική Ελλάδα, για βιομηχανία και χονδρεμπόριο.</span></li>
+        <li><strong>Ιωάννινα</strong><span>Τακτικά δρομολόγια προς την Ήπειρο, για τρόφιμα και γενικό φορτίο.</span></li>
+        <li><strong>Θεσσαλονίκη</strong><span>Η μεγαλύτερη απόσταση του δικτύου — κάλυψη βόρειας Ελλάδας με ίδιο στόλο.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section id="pelates" class="partners">
+    <div class="wrap">
+      <h2 class="section-title">Σε ποιους μεταφέρουμε</h2>
+      <p class="section-sub">Βιομηχανίες τροφίμων, εταιρίες καυσίμων και παραγωγοί μας εμπιστεύονται τα φορτία τους κάθε μέρα.</p>
+
+      <ul class="partner-list">
+        <li class="partner-row">
+          <span class="partner-name">Νιτσιάκος</span>
+          <span class="partner-desc">Διανομή γαλακτοκομικών με ψυκτικά οχήματα, σε σταθερά, προγραμματισμένα δρομολόγια.</span>
+        </li>
+        <li class="partner-row">
+          <span class="partner-name">AVIN</span>
+          <span class="partner-desc">Μεταφορά καυσίμων προς πρατήρια της Κρήτης με πιστοποιημένα βυτιοφόρα ADR.</span>
+        </li>
+        <li class="partner-row">
+          <span class="partner-name">Λαχανικά Ιεράπετρας</span>
+          <span class="partner-desc">Καθημερινή παραλαβή νωπής παραγωγής από τα θερμοκήπια και μεταφορά προς τις αγορές.</span>
+        </li>
+        <li class="partner-row partner-row-more">
+          <span class="partner-name">και άλλες συνεργασίες</span>
+          <span class="partner-desc">Βιομηχανίες, χονδρεμπόρια και παραγωγοί σε όλη την Κρήτη — ρωτήστε μας για το δικό σας δρομολόγιο.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="etairia" class="about">
+    <div class="wrap about-grid">
+      <div>
+        <h2 class="section-title">Η εταιρία</h2>
+        <p class="section-sub">Η Cretan Line ξεκίνησε από το Ηράκλειο και μεγάλωσε μαζί με τις ανάγκες της κρητικής αγοράς. Σήμερα είναι μία από τις μεγαλύτερες μεταφορικές εταιρίες του νησιού, με ίδιο στόλο, ίδιο προσωπικό συντήρησης και οδηγούς που γνωρίζουν κάθε γωνιά της Κρήτης — από τα ορεινά χωριά ως τα λιμάνια.</p>
+      </div>
+      <ul class="about-points">
+        <li>Ίδιος στόλος φορτηγών, βυτιοφόρων και ψυγείων</li>
+        <li>Συνεργεία συντήρησης εντός εταιρίας</li>
+        <li>Οδηγοί με πιστοποίηση ADR για επικίνδυνα φορτία</li>
+        <li>Κάλυψη όλου του νομού Ηρακλείου και της υπόλοιπης Κρήτης</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="epikoinonia" class="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-copy">
+        <h2 class="section-title light">Μιλήστε μαζί μας</h2>
+        <p class="section-sub light">Πείτε μας τι χρειάζεστε να μεταφέρετε και πότε — θα σας απαντήσουμε με δρομολόγιο και κόστος.</p>
+        <ul class="contact-info">
+          <li><strong>Τηλέφωνο:</strong> 2810&nbsp;000&nbsp;000</li>
+          <li><strong>Email:</strong> info@cretanline.gr</li>
+          <li><strong>Έδρα:</strong> Βιομηχανική Περιοχή, Ηράκλειο Κρήτης</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contact-form">
+        <label for="name">Όνομα</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="company">Εταιρία (προαιρετικό)</label>
+        <input type="text" id="company" name="company">
+
+        <label for="cargo">Τι θέλετε να μεταφέρετε</label>
+        <select id="cargo" name="cargo">
+          <option>Γενικά εμπορεύματα</option>
+          <option>Καύσιμα</option>
+          <option>Τρόφιμα / λαχανικά</option>
+          <option>Φορτίο με ψύξη</option>
+        </select>
+
+        <label for="message">Μήνυμα</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Αποστολή αιτήματος</button>
+        <p class="form-note" id="form-note" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span class="logo-text small">Cretan&nbsp;Line</span>
+    <span>© <span id="year"></span> Cretan Line — Μεταφορικές Υπηρεσίες Κρήτης</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
